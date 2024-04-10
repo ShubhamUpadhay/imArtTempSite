@@ -1,0 +1,167 @@
+body,
+h1,
+p,
+button,
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+/* Include box-sizing */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Set body defaults */
+body {
+    line-height: 1;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background: #333;
+    height: 100vh;
+    padding: 0 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header {
+    text-align: end;
+    text-transform: uppercase;
+    height: 10vh;
+    width: 100%;
+}
+
+.nav>a {
+    color: #88b1de;
+}
+
+.main-content {
+    height: 60vh;
+    width: 100%;
+}
+
+.title {
+    color: #ddd8d8;
+    font-size: 80px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.status-text {
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 10px;
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+/* Progress bar styles */
+.progress-container {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.progress-bar {
+    width: 0;
+    background-color: #88b1de;
+    text-align: center;
+    line-height: 15px;
+    color: white;
+    transition: width 0.4s ease;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.progress-bar-fill {
+    display: inline-block;
+    height: 15px;
+    background-color: #88b1de;
+    width: 70%;
+}
+
+.progress {
+    font-size: 10px;
+    font-weight: 600;
+    color: #88b1de;
+    margin-left: 5px;
+    font-style: oblique;
+}
+
+.btn-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notify-btn {
+    background-color: #88b1de;
+    color: black;
+    letter-spacing: 2px;
+    padding: 1% 1.5%;
+    margin: 0 auto !important
+}
+
+.social-links {
+    width: 60%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1% 2%;
+}
+
+
+.social-link {
+    border: 2px solid #ddd8db;
+    /* padding: 2% 4%; */
+    border-radius: 50%;
+    color: #ddd8d8 !important;
+    display: inline-block;
+    height: auto;
+    aspect-ratio: 1;
+    font-size: 30px;
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+    padding: 1% 2%;
+}
+
+.footer>p {
+    letter-spacing: 3px;
+}
+
+.footer>a {
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #88b1de;
+}
+
+.footer {
+    color: #ddd8d8;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+    position: absolute;
+    gap: 10px;
+    bottom: 2%;
+}
